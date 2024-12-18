@@ -109,7 +109,7 @@ To https://github.com/kelia01/git-bundleOne.git
 
 ### Exercise 1
 
-One> 
+``` bash
 `git checkout -b ft/bundle-2` #created a new branch ft/bundle-2
  One> git add services.html
 Switched to a new branch 'ft/bundle-2'
@@ -134,4 +134,4 @@ remote:      https://github.com/kelia01/git-bundleOne/pull/new/ft/bundle-2
 remote:
 To https://github.com/kelia01/git-bundleOne.git  
  * [new branch]      ft/bundle-2 -> ft/bundle-2  
-branch 'ft/bundle-2' set up to track 'origin/ft/bundle-2'.
+branch 'ft/bundle-2' set up to track 'origin/ft/bundle-2'.```
