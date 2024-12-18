@@ -7,7 +7,7 @@
  ```bash
  git init
 Initialized empty Git repository in /Users/gymumutuzo/git-bundleOne/.git/
-gymumutuzo@Umutuzos-iMac git-bundleOne % git branch
+gymumutuzo@Umutuzos-iMac git-bundleOne % ```git branch```
 gymumutuzo@Umutuzos-iMac git-bundleOne % git status
 On branch main
 
