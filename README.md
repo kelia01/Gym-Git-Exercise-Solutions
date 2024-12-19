@@ -100,11 +100,11 @@ Switched to branch 'dev'
 gymumutuzo@Umutuzos-iMac git-bundleOne % 
 `git push origin --delete test` #deleting branch test on the remote repository
 To https://github.com/kelia01/git-bundleOne.git
- - [deleted]         test```
+ - [deleted]         test
+ ```
  
-[Repository Name](https://github.com/kelia01/git-bundleOne.git)
+[git-bundleOne](https://github.com/kelia01/git-bundleOne.git)
 
- 
 ## Bundle 2
 
 ### Exercise 1
@@ -134,7 +134,8 @@ remote:      https://github.com/kelia01/git-bundleOne/pull/new/ft/bundle-2
 remote:
 To https://github.com/kelia01/git-bundleOne.git  
  * [new branch]      ft/bundle-2 -> ft/bundle-2  
-branch 'ft/bundle-2' set up to track 'origin/ft/bundle-2'.```
+branch 'ft/bundle-2' set up to track 'origin/ft/bundle-2'.
+```
 
 ## Bundle 2
 
