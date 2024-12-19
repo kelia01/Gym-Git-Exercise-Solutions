@@ -270,3 +270,202 @@ branch 'main' set up to track 'origin/main'.
 ```
  
 [git-bundleTwo](https://github.com/kelia01/git-bundleOne.git)
+
+## Bundle 3
+
+### Exercise 1
+
+``` bash
+`git checkout -b ft/team-page`
+Switched to a new branch 'ft/team-page'
+PS C:\Users\HP\git-bundleOne\git-bundleOne> 
+
+`git add teaam.html`
+PS C:\Users\HP\git-bundleOne\git-bundleOne> 
+
+`git commit -m "Add a new teaam.html file"`
+[ft/team-page 2240d78] Add a new teaam.html file
+ 1 file changed, 11 insertions(+)
+ create mode 100644 teaam.html
+PS C:\Users\HP\git-bundleOne\git-bundleOne> 
+
+`git push -u origin ft/team-page`
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.    
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 482 bytes | 241.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote:
+remote: Create a pull request for 'ft/team-page' 
+on GitHub by visiting:
+remote:      https://github.com/kelia01/git-bundleOne/pull/new/ft/team-page
+remote:
+To https://github.com/kelia01/git-bundleOne.git
+ * [new branch]      ft/team-page -> ft/team-pagebranch 'ft/team-page' set up to track 'origin/ft/team-page'.
+
+ `git checkout main`
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+PS C:\Users\HP\git-bundleOne\git-bundleOne> 
+
+`git checkout -b ft/contact-page`
+Switched to a new branch 'ft/contact-page'
+PS C:\Users\HP\git-bundleOne\git-bundleOne> 
+
+`git checkout ft/team-page`
+Switched to branch 'ft/team-page'
+Your branch is up to date with 'origin/ft/team-page'.
+PS C:\Users\HP\git-bundleOne\git-bundleOne> 
+
+`git log` #logs the commit history
+Author: Kelia Iradukunda <iradukundakelia@gmail.cHEAD -> ft/team-page, origin/ft/team-page)Date:   Thu Dec 19 13:56:10 2024 +0200           om>
+    Add a new teaam.html file
+
+commit 74715110a97c56e6a164f1c84d0969ca5a51abbd (origin/main, origin/HEAD, main, ft/contact-page) 
+Merge: 6a65f2d 31611a6                           origin/main, origin/HEAD, main, ft/contact-page)
+Author: Kelia Iradukunda <iradukundakelia@gmail.com>                                              om>
+Date:   Thu Dec 19 13:17:44 2024 +0200
+
+PS C:\Users\HP\git-bundleOne\git-bundleOne> 
+
+`git checkout ft/contact-page`
+Switched to branch 'ft/contact-page'
+PS C:\Users\HP\git-bundleOne\git-bundleOne> 
+
+`git cherry-pick 2240d78f7c627b672b1d38098a00af074c07fc45` #uses the commit hash and applies the commit from one branch to teh specified branch
+[ft/contact-page 07fb06e] Add a new teaam.html file
+ Date: Thu Dec 19 13:56:10 2024 +0200
+ 1 file changed, 11 insertions(+)
+ create mode 100644 teaam.html
+
+`git checkout -b ft/team-page`
+Switched to a new branch 'ft/team-page'
+PS C:\Users\HP\git-bundleOne\git-bundleOne> 
+
+`git add teaam.html`
+PS C:\Users\HP\git-bundleOne\git-bundleOne> 
+
+`git commit -m "Add a new teaam.html file"`
+[ft/team-page 2240d78] Add a new teaam.html file
+ 1 file changed, 11 insertions(+)
+ create mode 100644 teaam.html
+PS C:\Users\HP\git-bundleOne\git-bundleOne> 
+
+`git push -u origin ft/team-page`
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.    
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 482 bytes | 241.00 KPS C:\Users\HP\git-bundleOne\git-bundleOne> git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+PS C:\Users\HP\git-bundleOne\git-bundleOne> 
+
+`git checkout -b ft/contact-page`
+Switched to a new branch 'ft/contact-page'
+PS C:\Users\HP\git-bundleOne\git-bundleOne> 
+
+`git checkout ft/team-page`
+Switched to branch 'ft/team-page'
+Your branch is up to date with 'origin/ft/team-page'.
+PS C:\Users\HP\git-bundleOne\git-bundleOne> git log
+Author: Kelia Iradukunda <iradukundakelia@gmail.cHEAD -> ft/team-page, oDate:   Thu Dec 19 13:56:10 2024 +0200           om>
+    Add a new teaam.html file
+
+commit 74715110a97c56e6a164f1c84d0969ca5a51abbd (origin/main, origin/HEAD, main, ft/contact-page) 
+Merge: 6a65f2d 31611a6                           origin/main, origin/HEA
+
+PS C:\Users\HP\git-bundleOne\git-bundleOne> 
+
+`git commit -m  "Add a new contact.html"`
+[ft/contact-page eff1545] Add a new contact.html
+ 1 file changed, 11 insertions(+)              
+ create mode 100644 contact.html
+PS C:\Users\HP\git-bundleOne\git-bundleOne> 
+
+`git status`
+On branch ft/contact-page
+nothing to commit, working tree clean       
+PS C:\Users\HP\git-bundleOne\git-bundleOne> 
+
+`git push -u origin ft/contact-page`
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (6/6), 815 bytes | 271.00 KiB/s, done.
+remote: Resolving deltas: 100% (3/3), completed with 1 local object.
+remote:
+remote: Create a pull request for 'ft/contact-page' on GitHub by visiting:
+remote:
+ft/contact-page'.
+PS C:\Users\HP\git-bundleOne\git-bundleOne> git status
+-page'.
+
+nothing to commit, working tree clean
+PS C:\Users\HP\git-bundleOne\git-bundleOne> 
+
+`git checkout -b ft/faq-page`
+Switched to a new branch 'ft/faq-page'
+PS C:\Users\HP\git-bundleOne\git-bundleOne> 
+
+`git add faq.html`
+PS C:\Users\HP\git-bundleOne\git-bundleOne> 
+
+`git commit -m "Add a new faq.html file"`
+[ft/faq-page 9bbf3fb] Add a new faq.html file    
+ 1 file changed, 11 insertions(+)
+ create mode 100644 faq.html
+PS C:\Users\HP\git-bundleOne\git-bundleOne> 
+
+`git push -u origin ft/faq-page`
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 466 bytes | 233.00 Kd 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote:
+remote: Create a pull request for 'ft/faq-page' on GitHub by visiting:
+remote:      https://github.com/kelia01/git-bundleOne/pull/new/ft/faq-page        
+remote:
+To https://github.com/kelia01/git-bundleOne.git
+ * [new branch]      ft/faq-page -> ft/faq-page
+branch 'ft/faq-page' set up to track 'origin/ft/faq-page'.
+PS C:\Users\HP\git-bundleOne\git-bundleOne> 
+
+`git checkout ft/team-page`
+Switched to branch 'ft/team-page'
+Your branch is up to date with 'origin/ft/team-page'.
+git status
+On branch ft/team-page
+
+nothing to commit, working tree clean
+PS C:\Users\HP\git-bundleOne\git-bundleOne> 
+
+`git log -1` #brings back the last recent commit 
+commit 2240d78f7c627b672b1d38098a00af074c07fc45 (HEAD -> ft/team-page, origin/ft/team-page)
+Author: Kelia Iradukunda <iradukundakelia@gmail.com>
+Date:   Thu Dec 19 13:56:10 2024 +0200
+
+    Add a new teaam.html file
+PS C:\Users\HP\git-bundleOne\git-bundleOne> 
+
+`git revert 2240d78f7c627b672b1d38098a00af074c07fc45` # undoes changes introduced by a specific commit by creating a new commit 
+[ft/team-page 7d5c1cf] Revert "Add a new teaam.html file"
+ 1 file changed, 11 deletions(-)
+ delete mode 100644 teaam.html
+PS C:\Users\HP\git-bundleOne\git-bundleOne> 
+
+`git push origin ft/team-page`    
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 267 bytes | 267.00 KiB/s, done.
+Total 2 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/kelia01/git-bundleOne.git
+   2240d78..7d5c1cf  ft/team-page -> ft/team-page
