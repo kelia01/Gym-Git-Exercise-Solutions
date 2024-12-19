@@ -135,3 +135,123 @@ remote:
 To https://github.com/kelia01/git-bundleOne.git  
  * [new branch]      ft/bundle-2 -> ft/bundle-2  
 branch 'ft/bundle-2' set up to track 'origin/ft/bundle-2'.```
+
+## Bundle 2
+
+### Exercise 2
+``` bash
+$ `git checkout main` #checking out branch main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+HP@DESKTOP-R0HLVRA MINGW64 ~/git-bundleOne/git-bundleOne (main)
+$ `git pull origin main` #pulling the latest changes
+From https://github.com/kelia01/git-bundleOne
+ * branch            main       -> FETCH_HEAD
+Already up to date.
+
+HP@DESKTOP-R0HLVRA MINGW64 ~/git-bundleOne/git-bundleOne (main)
+$ `git checkout -b ft/service-redesign` #creating a new branch
+Switched to a new branch 'ft/service-redesign'
+git add service.html        
+fatal: pathspec 'service.html' did not match any files
+PS C:\Users\HP\git-bundleOne\git-bundleOne> 
+`git add services.html `      
+PS C:\Users\HP\git-bundleOne\git-bundleOne> 
+`git status`
+On branch ft/service-redesign
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   services.html
+
+PS C:\Users\HP\git-bundleOne\git-bundleOne> 
+`git commit -m "Add a paragraph to service.html"`
+[ft/service-redesign 31611a6] Add a paragraph to service.html
+ 1 file changed, 13 insertions(+)
+ create mode 100644 services.html
+PS C:\Users\HP\git-bundleOne\git-bundleOne> 
+`git push -u origin ft/service-redesign`
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.    
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done. 
+Writing objects: 100% (3/3), 500 bytes | 38.00 KiB/s, done.  
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.    
+remote: 
+remote: Create a pull request for 'ft/service-redesign' on GitHub by visiting:
+remote:      https://github.com/kelia01/git-bundleOne/pull/new/ft/service-redesign
+remote:
+To https://github.com/kelia01/git-bundleOne.git
+ * [new branch]      ft/service-redesign -> ft/service-redesign
+branch 'ft/service-redesign' set up to track 'origin/ft/service-redesign'.
+`git checkout main`
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+PS C:\Users\HP\git-bundleOne\git-bundleOne> 
+`git add services.html`
+PS C:\Users\HP\git-bundleOne\git-bundleOne> 
+`git commit -m "Correct a paragraph in service.html"`
+[main 6a65f2d] Correct a paragraph in service.html
+ 1 file changed, 13 insertions(+)
+ create mode 100644 services.html
+PS C:\Users\HP\git-bundleOne\git-bundleOne> 
+`git push -u origin main`     
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 506 bytes | 253.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.    
+To https://github.com/kelia01/git-bundleOne.git
+   5c43eb4..6a65f2d  main -> main
+branch 'main' set up to track 'origin/main'.
+git checkout ft/service-redesign 
+Switched to branch 'ft/service-redesign'
+Your branch is up to date with 'origin/ft/service-redesign'.
+PS C:\Users\HP\git-bundleOne\git-bundleOne> 
+`git diff main -- services.html`
+diff --git a/services.html b/services.html
+index 91c98e8..368b723 100644
+--- a/services.html
++++ b/services.html
+@@ -6,7 +6,7 @@
+     <title>Welcome | Services</title>
+ <body>
+     <h1>Our services are excellent,
+-        it is unlikely that you will find them elsewhere.
++        it is unlikely that you will them elsewhere.
+     </h1>
+ </body>
+ </html>
+ `git checkout main` #switched to main to merge it with ft/service-redesign
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+Your branch is up to date with 'origin/main'.
+Auto-merging services.html
+CONFLICT (add/add): Merge conflict in services.html
+Automatic merge failed; fix conflicts and then commit the result.
+PS C:\Users\HP\git-bundleOne\git-bundleOne> 
+`git merge ft/service-redesign` #merged ft/service-redesign to main
+Merge branch 'ft/service-redesign'
+PS C:\Users\HP\git-bundleOne\git-bundleOne> 
+`git add services.html`     #after resolving a conflict caused by the change in the same files at the same line of code, staged the file again
+PS C:\Users\HP\git-bundleOne\git-bundleOne> 
+`git commit` #commited with no message as merge provides its own
+[main 7471511] Merge branch 'ft/service-redesign'
+PS C:\Users\HP\git-bundleOne\git-bundleOne> 
+`git push -u origin main` #pushe my changes
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.    
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done. 
+Writing objects: 100% (3/3), 379 bytes | 75.00 KiB/s, done.  
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.   
+To https://github.com/kelia01/git-bundleOne.git
+   6a65f2d..7471511  main -> main
+branch 'main' set up to track 'origin/main'.
+```
+ 
+[git-bundleTwo](https://github.com/kelia01/git-bundleOne.git)
