@@ -470,3 +470,107 @@ Total 2 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
 remote: Resolving deltas: 100% (1/1), completed with 1 local object.
 To https://github.com/kelia01/git-bundleOne.git
    2240d78..7d5c1cf  ft/team-page -> ft/team-page
+```
+## Bundle 3
+
+### Exercise 2
+
+```bash
+
+ `git checkout ft/faq-page 
+Switched to branch 'ft/faq-page'
+Your branch is up to date with 'origin/ft/faq-page'.
+PS C:\Users\HP\git-bundleOne\git-bundleOne> 
+
+`git checkout -b ft/home-page-redesign`
+Switched to a new branch 'ft/home-page-redesign'
+PS C:\Users\HP\git-bundleOne\git-bundleOne> 
+
+`git checkout main`
+Switched to branch 'main'
+PS C:\Users\HP\git-bundleOne\git-bundleOne> 
+`git add team.html`
+PS C:\Users\HP\git-bundleOne\git-bundleOne> 
+
+`git commit -m "Add some changes to team.html"`
+[main 5071ea3] Add some changes to team.html
+PS C:\Users\HP\git-bundleOne\git-bundleOne> 
+
+`git commit -m "Add some changes to team.html"`
+[main 5071ea3] Add some changes to team.html
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+PS C:\Users\HP\git-bundleOne\git-bundleOne> 
+
+`git push -u origin main  `
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+PS C:\Users\HP\git-bundleOne\git-bundleOne> 
+
+`git commit -m "Add some changes to team.html"`
+[main 5071ea3] Add some changes to team.html
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+PS C:\Users\HP\git-bundleOne\git-bundleOne>
+
+` git push -u origin main  `
+PS C:\Users\HP\git-bundleOne\git-bundleOne> 
+
+`git commit -m "Add some changes to team.html"`
+[main 5071ea3] Add some changes to team.html
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+PS C:\Users\HP\git-bundleOne\git-bundleOne> 
+
+`git commit -m "Add some changes to team.html"`
+[main 5071ea3] Add some changes to team.html
+hanges to team.html"
+[main 5071ea3] Add some changes to team.html
+ 1 file changed, 1 insertion(+), 1 deletion(-) 
+PS C:\Users\HP\git-bundleOne\git-bundleOne> 
+
+`git push -u origin main  `
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Writing objects: 100% (3/3), 322 bytes | 161.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)        
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects 
+To https://github.com/kelia01/git-bundleOne.git
+   7471511..5071ea3  main -> main
+branch 'main' set up to track 'origin/main'.
+PS C:\Users\HP\git-bundleOne\git-bundleOne> 
+
+`git checkout ft/home-page-redesign`
+Switched to branch 'ft/home-page-redesign'
+PS C:\Users\HP\git-bundleOne\git-bundleOne> 
+
+`git rebase main`
+Successfully rebased and updated refs/heads/ft/home-page-redesign.   
+PS C:\Users\HP\git-bundleOne\git-bundleOne> 
+
+`git add home.html`  
+PS C:\Users\HP\git-bundleOne\git-bundleOne> 
+
+`git commit -m "Add new words in home.html"`
+[ft/home-page-redesign 737ddb5] Add new words in home.html
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+PS C:\Users\HP\git-bundleOne\git-bundleOne> 
+
+`git push -u origin ft/home-page-redesign`
+Enumerating objects: 14, done.
+Counting objects: 100% (14/14), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (12/12), done.
+Writing objects: 100% (12/12), 1.49 KiB | 76.00 KiB/s, done.
+Total 12 (delta 6), reused 0 (delta 0), pack-reused 0 (from 0)       
+remote: Resolving deltas: 100% (6/6), completed with 1 local object. 
+remote:
+remote: Create a pull request for 'ft/home-page-redesign' on GitHub by visiting:
+remote:      https://github.com/kelia01/git-bundleOne/pull/new/ft/home-page-redesign
+remote:
+To https://github.com/kelia01/git-bundleOne.git
+ * [new branch]      ft/home-page-redesign -> ft/home-page-redesign  
+branch 'ft/home-page-redesign' set up to track 'origin/ft/home-page-redesign'.
+```
+
+
