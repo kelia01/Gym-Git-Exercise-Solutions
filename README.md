@@ -768,5 +768,76 @@ remote: Resolving deltas: 100% (13/13), done.
 To https://github.com/kelia01/Git-second-repo.git
  * [new branch]      main -> main
  ```
+## Bundle 4 
+### Exercise 2
 
+``` bash
+PS C:\Users\HP\git-bundleOne\git-bundleOne> 
 
+`git checkout -b ft/footer footer.html`
+
+PS C:\Users\HP\git-bundleOne\git-bundleOne> 
+
+`git commit -m "Add a new footer file"`
+ create mode 100644 footer.html
+PS C:\Users\HP\git-bundleOne\git-bundleOne> 
+
+`git add footer.html`
+PS C:\Users\HP\git-bundleOne\git-bundleOne>
+
+`git commit -m "Add a new label in the footer file"   `     
+[ft/footer b5c2468] Add a new label in the footer file
+ 1 file changed, 8 insertions(+), 1 deletion(-)    
+
+PS C:\Users\HP\git-bundleOne\git-bundleOne> 
+
+`git push -u origin ft/footer`
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (6/6), 776 bytes | 86.00 KiB/s, done.
+remote: Resolving deltas: 100% (3/3), completed with 1 local object.
+remote:
+remote: Create a pull request for 'ft/footer' on Giremote:      https://github.com/kelia01/git-bundleOTo https://github.com/kelia01/git-bundleOne.git    
+ * [new branch]      ft/footer -> ft/footer        
+branch 'ft/footer' set up to track 'origin/ft/footer'.
+PS C:\Users\HP\git-bundleOne\git-bundleOne> 
+
+`git checkout main`
+Your branch is up to date with 'origin/main'.      
+PS C:\Users\HP\git-bundleOne\git-bundleOne> 
+
+`git checkout -b ft/squashing`
+ge --squash ft/footer
+Updating 6988b5f..b5c2468
+Fast-forward
+Squash commit -- not updating HEAD
+ footer.html | 18 ++++++++++++++++++
+ 1 file changed, 18 insertions(+)
+ create mode 100644 footer.html
+PS C:\Users\HP\git-bundleOne\git-bundleOne> 
+
+`git commit -m "footer changes squashing"  `                
+[ft/squashing cd02e67] footer changes squashing    
+ 1 file changed, 18 insertions(+)
+ create mode 100644 footer.html
+
+PS C:\Users\HP\git-bundleOne\git-bundleOne> 
+
+`git push -u origin ft/squashing`
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 506 bytes | 84.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote:
+remote: Create a pull request for 'ft/squashing' on GitHub by visiting:
+remote:      https://github.com/kelia01/git-bundleOne/pull/new/ft/squashing
+remote:
+To https://github.com/kelia01/git-bundleOne.git
+ * [new branch]      ft/squashing -> ft/squashing
+branch 'ft/squashing' set up to track 'origin/ft/squashing'.
+```
