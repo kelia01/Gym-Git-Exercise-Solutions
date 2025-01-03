@@ -666,36 +666,9 @@ PS C:\Users\HP\git-bundleOne\git-bundleOne>
 `git checkout main`
 Switched to branch 'main'
 PS C:\Users\HP\git-bundleOne\git-bundleOne> 
+
 `git add team.html`
-PS C:\Users\HP\git-bundleOne\git-bundleOne> 
 
-`git commit -m "Add some changes to team.html"`
-[main 5071ea3] Add some changes to team.html
-PS C:\Users\HP\git-bundleOne\git-bundleOne> 
-
-`git commit -m "Add some changes to team.html"`
-[main 5071ea3] Add some changes to team.html
- 1 file changed, 1 insertion(+), 1 deletion(-)
-PS C:\Users\HP\git-bundleOne\git-bundleOne> 
-
-`git push -u origin main  `
-Enumerating objects: 5, done.
-Counting objects: 100% (5/5), done.
-Delta compression using up to 4 threads
-Compressing objects: 100% (3/3), done.
-PS C:\Users\HP\git-bundleOne\git-bundleOne> 
-
-`git commit -m "Add some changes to team.html"`
-[main 5071ea3] Add some changes to team.html
- 1 file changed, 1 insertion(+), 1 deletion(-)
-PS C:\Users\HP\git-bundleOne\git-bundleOne>
-
-` git push -u origin main  `
-PS C:\Users\HP\git-bundleOne\git-bundleOne> 
-
-`git commit -m "Add some changes to team.html"`
-[main 5071ea3] Add some changes to team.html
- 1 file changed, 1 insertion(+), 1 deletion(-)
 PS C:\Users\HP\git-bundleOne\git-bundleOne> 
 
 `git commit -m "Add some changes to team.html"`
@@ -749,6 +722,51 @@ To https://github.com/kelia01/git-bundleOne.git
  * [new branch]      ft/home-page-redesign -> ft/home-page-redesign  
 branch 'ft/home-page-redesign' set up to track 'origin/ft/home-page-redesign'.
 ```
+## Bundle 4
+### Exercise 1
 
+``` bash
+PS C:\Users\HP\git-bundleOne\git-bundleOne> 
+
+`git checkout main`
+Already on 'main'
+PS C:\Users\HP\git-bundleOne\git-bundleOne> 
+
+`git remote add git-copy https://github.com/kelia01/Git-second-repo.git`
+
+PS C:\Users\HP\git-bundleOne\git-bundleOne>
+
+`git add home.html`
+
+PS C:\Users\HP\git-bundleOne\git-bundleOne>
+`git commit -m "Add a new sentence to the home page"`
+ 
+[main 6988b5f] Add a new sentence to the home page
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+PS C:\Users\HP\git-bundleOne\git-bundleOne> 
+
+`git push origin main`
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 352 bytes | 70.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.      
+To https://github.com/kelia01/git-bundleOne.git
+   5071ea3..6988b5f  main -> main
+PS C:\Users\HP\git-bundleOne\git-bundleOne> 
+
+`git push git-copy main`
+Enumerating objects: 27, done.
+Counting objects: 100% (27/27), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (22/22), done.
+Writing objects: 100% (27/27), 3.56 KiB | 214.00 KiB/s, done.
+Total 27 (delta 13), reused 11 (delta 3), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (13/13), done.
+To https://github.com/kelia01/Git-second-repo.git
+ * [new branch]      main -> main
+ ```
 
 
